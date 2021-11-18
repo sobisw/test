@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mable-app-deployment
+  namespace: default
+  labels:
+    app: mable-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mable-app
+  template:
+    metadata:
+      labels:
+        app: mable-app
+    spec:
+      containers:
+      - name: mable-app-container
+        image: mable-app:0.0.1
+        ports:
+        - name: http
+          containerPort: 80
+        imagePullPolicy: IfNotPresent
