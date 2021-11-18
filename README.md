@@ -18,7 +18,7 @@ To run the above shell script the following should in installed in Linux system:
 
 # Steps for execution
 - Clone the repository - `git clone https://github.com/sobisw/test.git`
-- Go into Script directory - `cd Script`
+- Go into Script directory - `cd test/Script/`
 - Make sure the script has execution permission - `chmod +x deploy.sh`
 - Execute the following command:
     `./deploy.sh [AWS_REGION_NAME] [dev | prod | stage]`
