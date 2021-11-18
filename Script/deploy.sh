@@ -3,7 +3,6 @@
 ## Terraform init and apply 
 cd ../VPC
 terraform init
-# change it to apply later
 # terraform plan -var-file="env/$1.tfvars" -var aws_region="$2" -var eks_cluster_name="$3"
 terraform apply -auto-approve -var-file="env/$1.tfvars" -var aws_region="$2" -var eks_cluster_name="$3"
 
